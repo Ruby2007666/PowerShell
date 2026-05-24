@@ -1,0 +1,8 @@
+Set-Location -Path 'C:\'
+				 '.\???'设置当前路径
+New-Item -Path '.\???+文件名' -ItemType File(文件）
+									Directory(文件夹） 创建文件
+Copy-Item -Path '.\当前路径' -Destination '.\目标路径'  复制文件
+Rename-Item -Path '.\当前路径' -NewName '新名字’重命名
+Get-ChildItem -Recurse  获取子目录
+Remove-Item -Path '.\当前路径' -Recurse
