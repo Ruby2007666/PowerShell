@@ -1,0 +1,5 @@
+Get-Process 获取进程
+Where-Object { $_.VM -gt 100MB}  筛选虚拟内存大于100MB的对象
+Sort-Object VM -Descending 排序
+Select-Object Name,VM -First 5  显示名字，VM，并只列出前五个
+管道：  Get-Process|Where-Object { $_.VM -gt 1MB} | Sort-Object VM -Descending|Select-Object Name,VM -First 5
