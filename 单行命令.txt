@@ -1,0 +1,5 @@
+Get-Process|Sort-Object CPU -Descending|Select-Object -First 5  CPU占比最高的5个
+Get-NetIPConFiguration   网络接口
+Get-Service|Where-Object { $_.Status -eq 'Running' -and $_.DisplayName -match 'Windows' }  正在运行的windows服务
+Get-WinEvent -FilterHashtable @{ LogName='System';Level=2 } -MaxEvents 5 最近的5个错误
+Get-PSDrive -PsProvider FileSystem  显示磁盘
