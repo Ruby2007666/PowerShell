@@ -1,0 +1,4 @@
+Get-Service -Name 服务名
+Start-Service -Name 服务名
+Stop-Service -Name 服务名
+ Set-Service -Name Spooler -StartupType Manual
